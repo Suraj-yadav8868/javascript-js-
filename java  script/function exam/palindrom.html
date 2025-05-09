@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //WAP TO CHECK WHETHER A NUMBER IS A PALINDROME OR NOT USING A FUNCTION
+        let num = prompt("enter the number for check palindrome or not");
+        let reverse = 0;
+
+        function palindrom(num) {
+            temp = num;
+            while( temp > 0){
+                let rev = temp % 10;
+                reverse = (reverse * 10) + rev
+                temp = Math.floor(temp /= 10); 
+            }  
+            if (temp == reverse){
+                document.writeln(num + "is palindrom number")
+            }else {
+                document.writeln(num + "is not a palindrome num")
+            }
+        
+        }
+        palindrom(121)
+    </script>
+</body>
+</html>
