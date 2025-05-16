@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // wap to find the maximum element of array using method
+        // let num = [10, 20, 30, 400, 50, 60];
+        // let newnum = num.sort((a, b) => b - a);
+        // for (let i = 0; i < 1; i++) {
+        //     document.writeln(newnum[i])
+        // }
+
+
+        // wap to find maximum element of array without using method.
+        // let max = [10, 20, 30, 40, 500, 60];
+        // let maxnum = max[0]
+        // for (i = 1; i < max.length; i++) {     
+        //     if (max[i] > maxnum) {
+        //         maxnum = max[i]
+        //     }
+        // }
+        // document.writeln(maxnum)
+
+
+
+        // wap to find minimum element of array using method.
+        // let num = [ 10, 20, 30, 40, 50, 60 , 5  ];
+        // let minnum = num[0];
+        // for(let i=1; i<num.length;i++){
+        //     if(num[i]< minnum){
+        //         minnum = num[i]
+        //     }
+        // }
+        // document.writeln(minnum);
+
+
+
+
+
+
+
+        // wap to sort array in acending order using method.
+        //  let num = [5,2,6,4,1,9]
+        //  num.sort((a,b) =>a - b)
+        //  document.writeln(num);
+
+
+        // wap to sort array in acending order without using method.
+           let num = [5,2,6,4,1,9];
+           let compare =num[0]
+           let newnum = [];
+           for(let i=1 ; i<num.length; i++){
+               if (num[i] < compare){
+                compare = num[i]
+                newnum.push(compare[i])
+               }
+           }
+           document.writeln(newnum)
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
