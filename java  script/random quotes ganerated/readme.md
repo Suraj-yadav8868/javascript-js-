@@ -14,6 +14,10 @@ Click the button and get inspired by a randomly chosen quote from some of the mo
 ## 📸 Preview
 
 
+https://github.com/user-attachments/assets/3ff15ec9-b266-4a41-9c7b-41bc9f19d118
+
+
+
 
 ---
 
