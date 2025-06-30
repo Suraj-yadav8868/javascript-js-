@@ -132,14 +132,22 @@
 // Create a Student class that extends Person and adds a method study().
 //  Use both methods on a Student object.
 
-// class person {
-
-//     greet(){
-
-//     }
+// class Person {   // Parent class: Person
+//   greet() {
+//     console.log("Hello! I am a sardar.");
+//   }
 // }
-// class student extends person{
-//       study(){
 
-//       }
+// // Child class: Student extends Person
+// class Student extends Person {
+//   study() {
+//     console.log("I am studying right now.");
+//   }
 // }
+
+// // Creating an object of Student class
+// const student1 = new Student();
+
+// // Calling both methods
+// student1.greet();   // Inherited from Person
+// student1.study();   // Defined in Student
