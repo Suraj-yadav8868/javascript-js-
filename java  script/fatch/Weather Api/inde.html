@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Weather App</title>
+  <style>
+    :root {
+      --bg-color: #0b1d3a;
+      --card-bg: rgba(255, 255, 255, 0.05);
+      --text-color: #fff;
+      --accent: #00d4ff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--text-color);
+    }
+
+    .weather-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(2px);
+      border-radius: 25px;
+      padding: 30px;
+      width: 700px;
+      display: flex;
+      justify-content: space-between;
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+    }
+
+    .left {
+      flex: 1;
+    }
+
+    .right {
+      text-align: right;
+    }
+
+    .search-box {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    input {
+      padding: 10px;
+      border-radius: 12px;
+      border: none;
+      width: 180px;
+    }
+
+    button {
+      padding: 10px 15px;
+      border-radius: 10px;
+      border: none;
+      background-color: var(--accent);
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: 64px;
+      font-weight: 300;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 5px;
+    }
+
+    p {
+      font-size: 16px;
+      margin: 4px 0;
+    }
+
+    #weather-icon {
+      width: 90px;
+    }
+
+    .city {
+      margin-bottom: 15px;
+    }
+
+    .details {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    .micro {
+      background: red;
+    }
+    .weather-header {
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+
+.weather-header .title {
+  font-size: 28px;
+  color: #00d4ff;
+  margin-top: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 0 0 5px #000;
+}
+
+.sun {
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(circle, #FFD700 40%, #FFA500 100%);
+  border-radius: 50%;
+  margin: 0 auto;
+  animation: spin 10s linear infinite;
+  box-shadow: 0 0 30px 10px rgba(255, 215, 0, 0.4);
+}
+
+.cloud {
+  width: 120px;
+  height: 60px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  opacity: 0.6;
+  box-shadow: 60px 0px 0px 0px #fff, 30px -20px 0px 0px #fff;
+}
+
+.cloud1 {
+  left: 10%;
+  animation: cloudMove 25s linear infinite;
+}
+
+.cloud2 {
+  left: 70%;
+  animation: cloudMove 35s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes cloudMove {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-200%); }
+}
+
+  </style>
+</head>
+<body>
+  <div class="weather-header">
+  <div class="sun"></div>
+  <div class="cloud cloud1"></div>
+  <div class="cloud cloud2"></div>
+  <h1 class="title">MausamVerse</h1>
+</div>
+
+  <div class="weather-card">
+    <div class="left">
+      <div class="search-box">
+        <input type="text" id="city-input" placeholder="Enter city" />
+        <button onclick="getWeather()">Search</button>
+        <button class="micro" onclick="startVoice()" title="Speak city">🎤</button>
+      </div>
+      <div class="city">
+        <h2 id="city-name">--</h2>
+        <p id="date-time">--</p>
+      </div>
+      <h1 id="temp">--°C</h1>
+      <p id="weather-desc">--</p>
+    </div>
+
+    <div class="right">
+      <img id="weather-icon" src="" />
+      <div class="details">
+        <p id="feels-like">Feels like: --°C</p>
+        <p id="humidity">Humidity: --%</p>
+        <p id="wind">Wind: -- km/h</p>
+      </div>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
