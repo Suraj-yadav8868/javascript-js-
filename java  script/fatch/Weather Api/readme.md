@@ -46,6 +46,10 @@ Includes a spinning sun and floating clouds for an eye-catching interface.
 
 
 
+
+https://github.com/user-attachments/assets/f2d78f1d-f7ee-4aa9-92b8-beea91a49197
+
+
 ---
 
 ## 🧠 Voice Example
