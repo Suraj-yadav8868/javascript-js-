@@ -1,16 +1,18 @@
 This is a simple Product Listing and Cart Application built using HTML, CSS, and JavaScript. It simulates an e-commerce shopping page that allows users to:
 
 Browse products
-
 Add items to the cart
-
 View and remove cart items
-
 See total price
-
 Maintain cart state with localStorage
 
 📸 Preview
+
+
+
+https://github.com/user-attachments/assets/65d5a20b-80ad-4d05-beac-1708a1e78b37
+
+
 
 
 
