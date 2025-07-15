@@ -42,6 +42,10 @@ This handy little app lets users **create, view, and manage notes** based on the
 ## 📸 DEMO
 
 
+https://github.com/user-attachments/assets/cf4d14a8-043c-4a96-a75b-0abcd3c77941
+
+
+
 
 ---
 
