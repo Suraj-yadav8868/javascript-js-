@@ -84,7 +84,10 @@ const save = () => localStorage.setItem("tasks", JSON.stringify(tasks));
 
 
 ## 🖼️ Preview
-https://github.com/user-attachments/assets/66d2f509-6371-4b2a-8ea9-436306d10d39
+
+
+https://github.com/user-attachments/assets/985caaed-fd1d-4a08-b52f-6ea9a9e5dc54
+
 
 
 
