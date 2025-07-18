@@ -72,13 +72,6 @@ const save = () => localStorage.setItem("tasks", JSON.stringify(tasks));
 
 ---
 
-
-## 🖼️ Preview
-
-
-
----
-
 ## 📦 Tech Stack
 
 * ✅ HTML5
@@ -88,6 +81,10 @@ const save = () => localStorage.setItem("tasks", JSON.stringify(tasks));
 
 ---
 
+
+
+## 🖼️ Preview
+https://github.com/user-attachments/assets/66d2f509-6371-4b2a-8ea9-436306d10d39
 
 
 
