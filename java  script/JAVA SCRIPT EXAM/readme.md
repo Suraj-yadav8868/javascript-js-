@@ -18,6 +18,14 @@ Built entirely with **HTML**, **CSS**, and **Vanilla JavaScript** — no framewo
 
 ---
 
+
+
+
+## 🖼️ Preview
+https://drive.google.com/file/d/1z9LgmQRgT-xSM-oj0j09Bm6JSn_1XL_5/view?usp=sharing
+
+
+
 ## 🧠 How It Works (Code Explanation)
 
 ### 📥 1. Getting DOM Elements
@@ -80,16 +88,6 @@ const save = () => localStorage.setItem("tasks", JSON.stringify(tasks));
 * 💾 localStorage
 
 ---
-
-
-
-## 🖼️ Preview
-
-
-https://github.com/user-attachments/assets/e9123e11-b5b6-4c52-9a72-ddd38612cd48
-
-
-
 
 
 ## 👨‍💻 Author
