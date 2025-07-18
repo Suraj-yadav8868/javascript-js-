@@ -1,0 +1,90 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+    body {
+      background: #f4f4f4;
+      padding: 0 20px;
+    }
+    header {
+      background: #55a4f4;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 24px;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      max-width: 900px;
+      margin: 40px auto;
+      flex-wrap: wrap;
+    }
+    .box, .list-panel {
+      background: #fff;
+      padding: 25px;
+      width: 400px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    .close {
+      background: #ff4d4d;
+      color: #fff;
+      border: none;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 5px;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    .add {
+      background: #28a745;
+      color: #fff;
+      padding: 12px;
+      width: 100%;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    .task {
+      background: #f9f9f9;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border-left: 5px solid gray;
+    }
+    .task.high { border-left-color: red; }
+    .task.medium { border-left-color: orange; }
+    .task.low { border-left-color: green; }
+    .btn {
+      padding: 6px 12px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-right: 5px;
+    }
+    .edit-btn { background: gold; color: black; }
+    .delete-btn { background: #dc3545; color: white; }
